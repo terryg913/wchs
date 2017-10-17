@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+html {
+	background: url(images/TakenByStorm_SharingStorms_1-1368x0-c-default.jpg) no-repeat;
+	background-size: 100% 100%;
+	color: #581087;
+}
+@media (max-width: 1385px){
+}
+
+.chibi {
+	border-style:solid;
+	border-color:#C5B358;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.megane {
+	color:#581087;
+	}
+
+.ataru {
+	margin-left: 15%;
+	margin-right: 15%;
+	
+}
+
+.ataru td {
+	text-align:center;	
+}
+
+.shutaro ul{
+	list-style:none;
+	
+}
+
+.shutaro ul li {
+	background-color:#C5B358;
+	width:150px;
+	border:1px solid black;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	float:left;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.shutaro {
+	position: relative;
+	margin-left: 178px;
+}

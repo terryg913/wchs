@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<style>	
+</style>
+<meta charset="utf-8">
+<title>WCHS Student News</title>
+<link href="wchs1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+
+<center><a href="index.html"><img src="images/MSBanner.png" width="600" height="200" class="chibi" alt="CHS Banner"></a></center>
+
+
+<div class="shutaro">
+<nav>
+     <ul>
+	     <li><a href="meettheteam.html">Meet the Team</a></li>
+         <li>Important Links</li>
+            <li><a href="https://www.facebook.com/pages/WCHS-News/195016983854969">Facebook Page</a></li></ul>
+			<li><a href="https://twitter.com/wchsnewsch4">Twitter Page</a></li></ul>
+         <li><a href="importantdates.html">Important Dates</a></li>
+         <li><a href="archive.html">News Archive</a></li>
+     </ul>
+</nav>
+	</div>
+
+
+
+
+<center>
+<div class="shinobu">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<iframe id="youtube_video" width="600" height="340" frameborder="7" alt="Current News" allowfullscreen></iframe>
+
+<script>
+var channelID = "UCQ8Lzvb0mSz0p5XAmZoW1zw";
+$.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D'+channelID, function(data) {
+   var link = data.items[0].link;
+   var id = link.substr(link.indexOf("=")+1);
+    $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0");
+});
+</script>
+	</div>
+	</center>
+
+
+
+
+<right><a class="twitter-timeline" href="https://twitter.com/wchsnewsch4" width="300" height="630">Tweets by wchsnewsch4</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></right>
+
+
+
+
+<footer class="megane">
+	<p>In Development by: Gregory Terry</p>
+	<p>Any additional information needed will appear here.</p>
+		<a href="http://www.myspectrumsports.com/">
+		<img src="images/SpectrumSports.jpg" width="160" height="40" alt=""></a>
+</footer>	
+			
+	
+</body>
+</html>
